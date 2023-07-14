@@ -1,7 +1,7 @@
 name: font_awsome_icon_class
 description: A new Flutter package project.
 version: 0.0.1
-homepage:https://github.com/workfor21
+homepage: https://github.com/workfor21/font_awsome_icon_class
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
