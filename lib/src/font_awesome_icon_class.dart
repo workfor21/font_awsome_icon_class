@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-IconData fontAwsomeIconClass(String className) {
+FaIcon faClassToIcon(String className,
+    {double? size,
+    Color? color,
+    String? semanticLabel,
+    TextDirection? textDirection}) {
   IconData? icon;
 
   switch (className) {
@@ -414,7 +419,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.solidEnvelopeOpen;
       break;
     case "fa fa-envelope-square":
-      icon = FontAwesomeIcons.envelopeSquare;
+      icon = FontAwesomeIcons.squareEnvelope;
       break;
     case "fa fa-eraser":
       icon = FontAwesomeIcons.eraser;
@@ -426,10 +431,10 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.exclamation;
       break;
     case "fa fa-exclamation-circle":
-      icon = FontAwesomeIcons.exclamationCircle;
+      icon = FontAwesomeIcons.circleExclamation;
       break;
     case "fa fa-exclamation-triangle":
-      icon = FontAwesomeIcons.exclamationTriangle;
+      icon = FontAwesomeIcons.triangleExclamation;
       break;
     case "fa fa-external-link":
       icon = FontAwesomeIcons.externalLink;
@@ -476,9 +481,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-flag-o":
       icon = FontAwesomeIcons.solidFlag;
       break;
-  // case "fa fa-flash":
-  // icon = FontAwesomeIcons.flas;
-  // break;
+    // case "fa fa-flash":
+    // icon = FontAwesomeIcons.flas;
+    // break;
     case "fa fa-flask":
       icon = FontAwesomeIcons.flask;
       break;
@@ -524,12 +529,12 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-graduation-cap":
       icon = FontAwesomeIcons.graduationCap;
       break;
-  // case "fa fa-group":
-  // icon = FontAwesomeIcons.gro;
-  // break;
-  // case "fa fa-hand-grab-o":
-  // icon = FontAwesomeIcons.handG;
-  // break;
+    // case "fa fa-group":
+    // icon = FontAwesomeIcons.gro;
+    // break;
+    // case "fa fa-hand-grab-o":
+    // icon = FontAwesomeIcons.handG;
+    // break;
     case "fa fa-hand-lizard-o":
       icon = FontAwesomeIcons.solidHandLizard;
       break;
@@ -551,9 +556,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-hand-spock-o":
       icon = FontAwesomeIcons.solidHandSpock;
       break;
-  // case "fa fa-hand-stop-o":
-  // icon = FontAwesomeIcons.hand;
-  // break;
+    // case "fa fa-hand-stop-o":
+    // icon = FontAwesomeIcons.hand;
+    // break;
     case "fa fa-handshake-o":
       icon = FontAwesomeIcons.solidHandshake;
       break;
@@ -668,12 +673,12 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-level-up":
       icon = FontAwesomeIcons.levelUp;
       break;
-  // case "fa fa-life-bouy":
-  // icon = FontAwesomeIcons.lifeBouy;
-  // break;
-  // case "fa fa-life-buoy":
-  // icon = FontAwesomeIcons.life;
-  // break;
+    // case "fa fa-life-bouy":
+    // icon = FontAwesomeIcons.lifeBouy;
+    // break;
+    // case "fa fa-life-buoy":
+    // icon = FontAwesomeIcons.life;
+    // break;
     case "fa fa-life-ring":
       icon = FontAwesomeIcons.lifeRing;
       break;
@@ -747,7 +752,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.minusCircle;
       break;
     case "fa fa-minus-square":
-      icon = FontAwesomeIcons.minusSquare;
+      icon = FontAwesomeIcons.squareMinus;
       break;
     case "fa fa-minus-square-o":
       icon = FontAwesomeIcons.solidSquareMinus;
@@ -816,14 +821,14 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.phone;
       break;
     case "fa fa-phone-square":
-      icon = FontAwesomeIcons.phoneSquare;
+      icon = FontAwesomeIcons.squarePhone;
       break;
     case "fa fa-photo":
       icon = FontAwesomeIcons.image;
       break;
-  // case "fa fa-picture-o":
-  // icon = FontAwesomeIcons.picture;
-  // break;
+    // case "fa fa-picture-o":
+    // icon = FontAwesomeIcons.picture;
+    // break;
     case "fa fa-pie-chart":
       icon = FontAwesomeIcons.pieChart;
       break;
@@ -840,7 +845,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.plusCircle;
       break;
     case "fa fa-plus-square":
-      icon = FontAwesomeIcons.plusSquare;
+      icon = FontAwesomeIcons.squarePlus;
       break;
     case "fa fa-plus-square-o":
       icon = FontAwesomeIcons.solidSquarePlus;
@@ -912,7 +917,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.rss;
       break;
     case "fa fa-rss-square":
-      icon = FontAwesomeIcons.rssSquare;
+      icon = FontAwesomeIcons.squareRss;
       break;
     case "fa fa-s15":
       icon = FontAwesomeIcons.s;
@@ -929,9 +934,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-send":
       icon = FontAwesomeIcons.message;
       break;
-  // case "fa fa-send-o":
-  // icon = FontAwesomeIcons.send;
-  // break;
+    // case "fa fa-send-o":
+    // icon = FontAwesomeIcons.send;
+    // break;
     case "fa fa-server":
       icon = FontAwesomeIcons.server;
       break;
@@ -1055,9 +1060,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-star-half-empty":
       icon = FontAwesomeIcons.solidStarHalfAlt;
       break;
-  // case "fa fa-star-half-full":
-  // icon = FontAwesomeIcons.star;
-  // break;
+    // case "fa fa-star-half-full":
+    // icon = FontAwesomeIcons.star;
+    // break;
     case "fa fa-star-half-o":
       icon = FontAwesomeIcons.solidStarHalf;
       break;
@@ -1079,9 +1084,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-sun-o":
       icon = FontAwesomeIcons.solidSun;
       break;
-  // case "fa fa-support":
-  // icon = FontAwesomeIcons.support;
-  // break;
+    // case "fa fa-support":
+    // icon = FontAwesomeIcons.support;
+    // break;
     case "fa fa-tablet":
       icon = FontAwesomeIcons.tablet;
       break;
@@ -1175,19 +1180,19 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-tint":
       icon = FontAwesomeIcons.tint;
       break;
-  // case "fa fa-toggle-down":
-  // icon = FontAwesomeIcons.toggle-down;
-  // break;
-  // case "fa fa-toggle-left":
-  // icon = FontAwesomeIcons.toggle-left;
-  // break;
+    // case "fa fa-toggle-down":
+    // icon = FontAwesomeIcons.toggle-down;
+    // break;
+    // case "fa fa-toggle-left":
+    // icon = FontAwesomeIcons.toggle-left;
+    // break;
     case "fa fa-toggle-off":
       icon = FontAwesomeIcons.toggleOff;
       break;
     case "fa fa-toggle-on":
       icon = FontAwesomeIcons.toggleOn;
       break;
-  // case /
+    // case /
     case "fa fa-trademark":
       icon = FontAwesomeIcons.trademark;
       break;
@@ -1308,7 +1313,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-wrench":
       icon = FontAwesomeIcons.wrench;
       break;
-  // Accessibility Icons
+    // Accessibility Icons
     case "fa fa-american-sign-language-interpreting":
       icon = FontAwesomeIcons.americanSignLanguageInterpreting;
       break;
@@ -1327,9 +1332,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-braille":
       icon = FontAwesomeIcons.braille;
       break;
-  // case "fa fa-cc":
-  // icon = FontAwesomeIcons.cc;
-  // break;
+    // case "fa fa-cc":
+    // icon = FontAwesomeIcons.cc;
+    // break;
     case "fa fa-deaf":
       icon = FontAwesomeIcons.deaf;
       break;
@@ -1366,10 +1371,10 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-wheelchair-alt":
       icon = FontAwesomeIcons.wheelchairAlt;
       break;
-  // Hand Icons
-  // case "fa fa-hand-grab-o":
-  // icon = FontAwesomeIcons.grab;
-  // break;
+    // Hand Icons
+    // case "fa fa-hand-grab-o":
+    // icon = FontAwesomeIcons.grab;
+    // break;
     case "fa fa-hand-lizard-o":
       icon = FontAwesomeIcons.solidHandLizard;
       break;
@@ -1418,7 +1423,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-thumbs-up":
       icon = FontAwesomeIcons.thumbsUp;
       break;
-  // Transportation Icons
+    // Transportation Icons
     case "fa fa-ambulance":
       icon = FontAwesomeIcons.ambulance;
       break;
@@ -1473,13 +1478,13 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-wheelchair-alt":
       icon = FontAwesomeIcons.wheelchairAlt;
       break;
-  // Gender Icons
+    // Gender Icons
     case "fa fa-genderless":
       icon = FontAwesomeIcons.genderless;
       break;
-  // case "fa fa-intersex":
-  // icon = FontAwesomeIcons.sex;
-  // break;
+    // case "fa fa-intersex":
+    // icon = FontAwesomeIcons.sex;
+    // break;
     case "fa fa-mars":
       icon = FontAwesomeIcons.mars;
       break;
@@ -1516,7 +1521,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-venus-mars":
       icon = FontAwesomeIcons.venusMars;
       break;
-  // File Type Icons
+    // File Type Icons
     case "fa fa-file":
       icon = FontAwesomeIcons.file;
       break;
@@ -1535,9 +1540,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-file-image-o":
       icon = FontAwesomeIcons.solidFileImage;
       break;
-  // case "fa fa-file-movie-o":
-  // icon = FontAwesomeIcons.file;
-  // break;
+    // case "fa fa-file-movie-o":
+    // icon = FontAwesomeIcons.file;
+    // break;
     case "fa fa-file-o":
       icon = FontAwesomeIcons.solidFile;
       break;
@@ -1571,7 +1576,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-file-zip-o":
       icon = FontAwesomeIcons.fileZipper;
       break;
-  // Spinner Icons
+    // Spinner Icons
     case "fa fa-cog":
       icon = FontAwesomeIcons.cog;
       break;
@@ -1584,9 +1589,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-spinner":
       icon = FontAwesomeIcons.spinner;
       break;
-  // Form Control Icons
+    // Form Control Icons
     case "fa fa-check-square":
-      icon = FontAwesomeIcons.checkSquare;
+      icon = FontAwesomeIcons.squareCheck;
       break;
     case "fa fa-cc-discover":
       icon = FontAwesomeIcons.ccDiscover;
@@ -1618,7 +1623,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-paypal":
       icon = FontAwesomeIcons.paypal;
       break;
-  // Chart Icons
+    // Chart Icons
     case "fa fa-area-chart":
       icon = FontAwesomeIcons.areaChart;
       break;
@@ -1634,7 +1639,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-pie-chart":
       icon = FontAwesomeIcons.pieChart;
       break;
-  // Currency Icons
+    // Currency Icons
     case "fa fa-bitcoin":
       icon = FontAwesomeIcons.bitcoin;
       break;
@@ -1698,9 +1703,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-sheqel":
       icon = FontAwesomeIcons.sheqel;
       break;
-  // case "fa fa-try":
-  // icon = FontAwesomeIcons.try;
-  // break;
+    // case "fa fa-try":
+    // icon = FontAwesomeIcons.try;
+    // break;
     case "fa fa-turkish-lira":
       icon = FontAwesomeIcons.turkishLira;
       break;
@@ -1716,7 +1721,7 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-yen":
       icon = FontAwesomeIcons.yen;
       break;
-  // Text Editor Icons
+    // Text Editor Icons
     case "fa fa-align-center":
       icon = FontAwesomeIcons.alignCenter;
       break;
@@ -2011,18 +2016,18 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-long-arrow-up":
       icon = FontAwesomeIcons.longArrowUp;
       break;
-  // case "fa fa-toggle-down":
-  // icon = FontAwesomeIcons.toggle-down;
-  // break;
-  // case "fa fa-toggle-left":
-  // icon = FontAwesomeIcons.toggle-left;
-  // break;
-  // case "fa fa-toggle-right":
-  // icon = FontAwesomeIcons.toggleRight;
-  // break;
-  // case "fa fa-toggle-up":
-  // icon = FontAwesomeIcons.toggle;
-  // break;
+    // case "fa fa-toggle-down":
+    // icon = FontAwesomeIcons.toggle-down;
+    // break;
+    // case "fa fa-toggle-left":
+    // icon = FontAwesomeIcons.toggle-left;
+    // break;
+    // case "fa fa-toggle-right":
+    // icon = FontAwesomeIcons.toggleRight;
+    // break;
+    // case "fa fa-toggle-up":
+    // icon = FontAwesomeIcons.toggle;
+    // break;
     case "fa fa-arrows-alt":
       icon = FontAwesomeIcons.arrowsAlt;
       break;
@@ -2086,9 +2091,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-youtube-play":
       icon = FontAwesomeIcons.youtube;
       break;
-  // case "fa fa-500px":
-  // icon = FontAwesomeIcons.px;
-  // break;
+    // case "fa fa-500px":
+    // icon = FontAwesomeIcons.px;
+    // break;
     case "fa fa-adn":
       icon = FontAwesomeIcons.adn;
       break;
@@ -2111,7 +2116,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.behance;
       break;
     case "fa fa-behance-square":
-      icon = FontAwesomeIcons.behanceSquare;
+      icon = FontAwesomeIcons.squareBehance;
       break;
     case "fa fa-bitbucket":
       icon = FontAwesomeIcons.bitbucket;
@@ -2203,9 +2208,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-edge":
       icon = FontAwesomeIcons.edge;
       break;
-  // case "fa fa-eercast":
-  // icon = FontAwesomeIcons.cas;
-  // break;
+    // case "fa fa-eercast":
+    // icon = FontAwesomeIcons.cas;
+    // break;
     case "fa fa-empire":
       icon = FontAwesomeIcons.empire;
       break;
@@ -2218,9 +2223,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-expeditedssl":
       icon = FontAwesomeIcons.expeditedssl;
       break;
-  // case "fa fa-fa":
-  // icon = FontAwesomeIcons.fa;
-  // break;
+    // case "fa fa-fa":
+    // icon = FontAwesomeIcons.fa;
+    // break;
     case "fa fa-facebook":
       icon = FontAwesomeIcons.facebook;
       break;
@@ -2231,7 +2236,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.facebookF;
       break;
     case "fa fa-facebook-square":
-      icon = FontAwesomeIcons.facebookSquare;
+      icon = FontAwesomeIcons.squareFacebook;
       break;
     case "fa fa-firefox":
       icon = FontAwesomeIcons.firefox;
@@ -2276,7 +2281,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.git;
       break;
     case "fa fa-git-square":
-      icon = FontAwesomeIcons.gitSquare;
+      icon = FontAwesomeIcons.squareGit;
       break;
     case "fa fa-github":
       icon = FontAwesomeIcons.github;
@@ -2285,14 +2290,14 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.githubAlt;
       break;
     case "fa fa-github-square":
-      icon = FontAwesomeIcons.githubSquare;
+      icon = FontAwesomeIcons.squareGithub;
       break;
     case "fa fa-gitlab":
       icon = FontAwesomeIcons.gitlab;
       break;
-  // case "fa fa-gittip":
-  // icon = FontAwesomeIcons.gitt;
-  // break;
+    // case "fa fa-gittip":
+    // icon = FontAwesomeIcons.gitt;
+    // break;
     case "fa fa-glide":
       icon = FontAwesomeIcons.glide;
       break;
@@ -2312,7 +2317,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.googlePlus;
       break;
     case "fa fa-google-plus-square":
-      icon = FontAwesomeIcons.googlePlusSquare;
+      icon = FontAwesomeIcons.squareGooglePlus;
       break;
     case "fa fa-google-wallet":
       icon = FontAwesomeIcons.googleWallet;
@@ -2354,7 +2359,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.lastfm;
       break;
     case "fa fa-lastfm-square":
-      icon = FontAwesomeIcons.lastfmSquare;
+      icon = FontAwesomeIcons.squareLastfm;
       break;
     case "fa fa-leanpub":
       icon = FontAwesomeIcons.leanpub;
@@ -2374,9 +2379,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-maxcdn":
       icon = FontAwesomeIcons.maxcdn;
       break;
-  // case "fa fa-meanpath":
-  // icon = FontAwesomeIcons.path;
-  // break;
+    // case "fa fa-meanpath":
+    // icon = FontAwesomeIcons.path;
+    // break;
     case "fa fa-medium":
       icon = FontAwesomeIcons.medium;
       break;
@@ -2393,7 +2398,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.odnoklassniki;
       break;
     case "fa fa-odnoklassniki-square":
-      icon = FontAwesomeIcons.odnoklassnikiSquare;
+      icon = FontAwesomeIcons.squareOdnoklassniki;
       break;
     case "fa fa-opencart":
       icon = FontAwesomeIcons.opencart;
@@ -2429,7 +2434,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.pinterestP;
       break;
     case "fa fa-pinterest-square":
-      icon = FontAwesomeIcons.pinterestSquare;
+      icon = FontAwesomeIcons.squarePinterest;
       break;
     case "fa fa-product-hunt":
       icon = FontAwesomeIcons.productHunt;
@@ -2440,9 +2445,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-quora":
       icon = FontAwesomeIcons.quora;
       break;
-  // case "fa fa-ra":
-  // icon = FontAwesomeIcons.ra;
-  // break;
+    // case "fa fa-ra":
+    // icon = FontAwesomeIcons.ra;
+    // break;
     case "fa fa-ravelry":
       icon = FontAwesomeIcons.ravelry;
       break;
@@ -2456,14 +2461,14 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.redditAlien;
       break;
     case "fa fa-reddit-square":
-      icon = FontAwesomeIcons.redditSquare;
+      icon = FontAwesomeIcons.squareReddit;
       break;
     case "fa fa-renren":
       icon = FontAwesomeIcons.renren;
       break;
-  // case "fa fa-resistance":
-  // icon = FontAwesomeIcons.resistance;
-  // break;
+    // case "fa fa-resistance":
+    // icon = FontAwesomeIcons.resistance;
+    // break;
     case "fa fa-safari":
       icon = FontAwesomeIcons.safari;
       break;
@@ -2504,7 +2509,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.snapchatGhost;
       break;
     case "fa fa-snapchat-square":
-      icon = FontAwesomeIcons.snapchatSquare;
+      icon = FontAwesomeIcons.squareSnapchat;
       break;
     case "fa fa-soundcloud":
       icon = FontAwesomeIcons.soundcloud;
@@ -2522,7 +2527,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.steam;
       break;
     case "fa fa-steam-square":
-      icon = FontAwesomeIcons.steamSquare;
+      icon = FontAwesomeIcons.squareSteam;
       break;
     case "fa fa-stumbleupon":
       icon = FontAwesomeIcons.stumbleupon;
@@ -2545,14 +2550,14 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-trello":
       icon = FontAwesomeIcons.trello;
       break;
-  // case "fa fa-tripadvisor":
-  // icon = FontAwesomeIcons.;
-  // break;
+    // case "fa fa-tripadvisor":
+    // icon = FontAwesomeIcons.;
+    // break;
     case "fa fa-tumblr":
       icon = FontAwesomeIcons.tumblr;
       break;
     case "fa fa-tumblr-square":
-      icon = FontAwesomeIcons.tumblrSquare;
+      icon = FontAwesomeIcons.squareTumblr;
       break;
     case "fa fa-twitch":
       icon = FontAwesomeIcons.twitch;
@@ -2561,7 +2566,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.twitter;
       break;
     case "fa fa-twitter-square":
-      icon = FontAwesomeIcons.twitterSquare;
+      icon = FontAwesomeIcons.squareTwitter;
       break;
     case "fa fa-usb":
       icon = FontAwesomeIcons.usb;
@@ -2573,13 +2578,13 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.viadeo;
       break;
     case "fa fa-viadeo-square":
-      icon = FontAwesomeIcons.viadeoSquare;
+      icon = FontAwesomeIcons.squareViadeo;
       break;
     case "fa fa-vimeo":
       icon = FontAwesomeIcons.vimeo;
       break;
     case "fa fa-vimeo-square":
-      icon = FontAwesomeIcons.vimeoSquare;
+      icon = FontAwesomeIcons.squareVimeo;
       break;
     case "fa fa-vine":
       icon = FontAwesomeIcons.vine;
@@ -2587,9 +2592,9 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-vk":
       icon = FontAwesomeIcons.vk;
       break;
-  // case "fa fa-wechat":
-  // icon = FontAwesomeIcons.we;
-  // break;
+    // case "fa fa-wechat":
+    // icon = FontAwesomeIcons.we;
+    // break;
     case "fa fa-weibo":
       icon = FontAwesomeIcons.weibo;
       break;
@@ -2621,7 +2626,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.xing;
       break;
     case "fa fa-xing-square":
-      icon = FontAwesomeIcons.xingSquare;
+      icon = FontAwesomeIcons.squareXing;
       break;
     case "fa fa-y-combinator":
       icon = FontAwesomeIcons.yCombinator;
@@ -2636,7 +2641,7 @@ IconData fontAwsomeIconClass(String className) {
       icon = FontAwesomeIcons.yCombinator;
       break;
     case "fa fa-yc-square":
-      icon = FontAwesomeIcons.youtubeSquare;
+      icon = FontAwesomeIcons.squareYoutube;
       break;
     case "fa fa-yelp":
       icon = FontAwesomeIcons.yelp;
@@ -2644,12 +2649,15 @@ IconData fontAwsomeIconClass(String className) {
     case "fa fa-yoast":
       icon = FontAwesomeIcons.yoast;
       break;
-  // youtube
-    case "fa fa-youtube-play":
-      icon = FontAwesomeIcons.youtube;
-      break;
     default:
       icon = FontAwesomeIcons.at;
   }
-  return icon;
+
+  return FaIcon(
+    icon,
+    size: size,
+    color: color,
+    semanticLabel: semanticLabel,
+    textDirection: textDirection,
+  );
 }

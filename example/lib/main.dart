@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sizable/sizable.dart';
+import 'package:font_awesome_icon_class/src/font_awesome_icon_class.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,30 +23,24 @@ class ExamplePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Class-Name-To-Icon Example'),
-      ),
-      body: 'left'.align(  // Alignment.left
-        Padding(
-          padding: spacing(), // EdgeInsets.all(10)
-          child: Column(
-            children: [
-              'left'.align(
-                Text('Left Aligned'),
-              ),
-              20.sizeh, // SizedBox(height: 20)
-              'center'.align(
-                Text('Center Aligned'),
-              ),
-              20.sizeh,
-              'right'.align(
-                Text('Right Aligned'),
-              ),
-              20.sizeh,
-            ],
-          ),
+        appBar: AppBar(
+          title: const Text('Class-Name-To-Icon Example'),
         ),
-      ),
-    );
+        body: Column(
+          children: [
+
+            // this is how you normally use font_awesome_flutter package
+            const FaIcon(
+              FontAwesomeIcons.at,
+            ),
+
+            // you pass the class inside fontAwsomeIconClass function and it returns an IconData
+            faClassToIcon('fa fa-at',size: 14,semanticLabel: "@",color: Colors.blue,textDirection: TextDirection.ltr),
+
+            faClassToIcon('fa fa-bed',size: 20,semanticLabel: "bed",color: Colors.blue,textDirection: TextDirection.ltr),
+
+            faClassToIcon('fa fa-facebook',size: 35,semanticLabel: "@",color: Colors.blue,textDirection: TextDirection.ltr),
+          ],
+        ));
   }
 }

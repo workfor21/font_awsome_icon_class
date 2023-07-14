@@ -1,6 +1,6 @@
-name: font_awsome_icon_class
-description: A new Flutter package project.
-version: 0.0.1
+name: font_awesome_icon_class
+description: This package help solve the problem of not being able to display "font_awesome_icon_class" in the mobile screen. This package is made with the help of "font_awesome_flutter".
+version: 0.0.4
 homepage: https://github.com/workfor21/font_awsome_icon_class
 
 environment:
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:

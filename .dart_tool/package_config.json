@@ -56,6 +56,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///C:/Users/DELL/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/DELL/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
@@ -140,13 +146,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "font_awsome_icon_class",
+      "name": "font_awesome_icon_class",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-07-14T06:55:18.634988Z",
+  "generated": "2023-07-14T11:05:21.754863Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }
