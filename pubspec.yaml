@@ -1,6 +1,6 @@
 name: font_awesome_icon_class
 description: This package help solve the problem of not being able to display "font_awesome_icon_class" in the mobile screen. This package is made with the help of "font_awesome_flutter".
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/workfor21/font_awsome_icon_class
 
 environment:
