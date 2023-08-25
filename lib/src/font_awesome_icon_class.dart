@@ -3,7 +3,10 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 export 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 FaIcon faClassToIcon(String className,
-    {double? size, Color? color, String? semanticLabel, TextDirection? textDirection}) {
+    {double? size,
+    Color? color,
+    String? semanticLabel,
+    TextDirection? textDirection}) {
   IconData? icon;
 
   switch (className) {

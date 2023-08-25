@@ -9,3 +9,6 @@ You can change the size, color, semanticLabel and textDirection
 
 ## 0.0.5
 changed all deprecated icons to newer ones
+
+## 0.0.6
+readme updated
